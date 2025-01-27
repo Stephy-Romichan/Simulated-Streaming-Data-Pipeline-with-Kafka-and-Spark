@@ -1,8 +1,6 @@
 {
   "type": "service_account",
   "project_id": "tidy-etching-447916-t0",
-  "private_key_id": "4aa2897d4a72d341ca7bcf98f3d096829415165d",
-  "private_key": "your-private-key",
   "client_email": "bigquery-service@tidy-etching-447916-t0.iam.gserviceaccount.com",
   "client_id": "110792072012476435140",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
