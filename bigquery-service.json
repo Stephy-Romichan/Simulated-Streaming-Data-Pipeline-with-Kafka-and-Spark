@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "tidy-etching-447916-t0",
+  "private_key_id": "4aa2897d4a72d341ca7bcf98f3d096829415165d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFg2msYH/rxdC0\n5XSWkc4tyDBZZ0dPpaRWTwoFo+gsfP+51tZJP9FT0uv7tkRyE6uolz9a/ztt9iqE\nWszfppUqQuoOxV8r1lCMO/TOtB9rfzzwNYB946OG3V00uYlIStEJtfBqoZnYKCFc\nZg48xy5ift3iVfsgMWL0VzmlnD9caT480aUwRAVFVLKh6FI3e7HQlo0GGMWksXjs\nju135iYnTxmAHODL84qaRZqOuxTPzNAgDkJ/Gk5q+6QKm7W00RniFivkJ7EfoE68\nnJCnLt2y8/27xpGFLv+uJEJqnzUiKaaMOpMTMVdU6NuS0QacZcgFuI4K2hMn12l4\nv+k0Lj7ZAgMBAAECggEAF89VkvV/mkAqnpH+HeQWCSQVuwNVoAL5dnuY+1DU3V8U\ns1YUFzixnvOhZcLFScS4B+7ysOEtjH4VRkcNZUUnPHTcUxtFM6tGYr9cDbp+QqbQ\nJWtnsdVaKlj/YkqfA2dcf3mOscYJHhsJWYKGgxpmS7KcRCuGBk2ZzpeAwCd/pl+l\nx27EIeho2RdtJNS3YydlDiglEcJtTxaHz8G9vubKWWCrROJzaGb8ivRQEI7X5avK\nDV60zQ8o0rwfEGeY663luiKmp+7NJSWCW//XUR7F+miBp4DTlnsl+GNKp7lpv+k3\nPpj1jfy2AlyPMpoefR5lCHb1EfLVaNAC9GXDzltlkQKBgQDnnOOr+zOTC3gDLgwW\nbn/OlgnA9HQFgS23BGR8HrBYqsOwTEigkQkz6S1LSsL1gx0tnO5PulkjgvHHzxGO\n+ZeQ7xluDJK5Rou427BLYOLRT8gmKM8as70m9DhYFqtzX+CsOkSn9ESY3jjGUOtd\noIhv9bRl3DTdMYikPXCFR5oJaQKBgQDaT196ExNcwS2qklHwvBDoG5opCrJ5qy5o\n6dhS9Rs9aCmD4H4FCrCxzeb+sbwvb6CSdITFOIqvVLSd/yiXBl/Z4k61gOuJI5M+\nF9clOYbzZPMspSp48Viv0+mvqz/Ft8VwUtpsVONnX2yGGPL0amSNBtFoacCkE6S/\now0NwEjr8QKBgHEayIO/1FvGigDjh7uckoVL989mkRHvF2f8mSWTxwJFwfJiDkV7\nDkdvY1MVW0eRk7omnKoKkmUpGPE+SZDMihuY5446TZx0ut63ScxFr/4PO+qGmzyq\n8YAIW0uJJojdFVaFzelG/Ai63HbcJVQ/hOFH16S2eIpcGiI6bqxnXu2hAoGBAKyw\n0PP+FvjujzM437yw6CbTftUscxYvxVyUbtzgqxWeSgjaEpXmaPOdzzZ2Xkif4sM3\njLd+DKa5OM8qwm8FSdlPXbfSLX+kNpuNvFDj+s6acopEdR6Ku/8KgPbHXoEG6BX8\nVHARjnl9UJmbLsUNTFEKragMz6h7KX22e2L/Ui/hAoGAPTC1BPRMZuX4NLPlRt10\nUAUWKc58F9IPlrDjOUNgxNKeTG9P1lg6C/drKsC9ifxOkebXgQVtPLSjV2T/Y6WI\nVe8C4Va8E/SfS9OnWsutnVHP5rBtoKTazHSK8MVxxtRGOQNheIKQzBl9ANSfMko3\nF71C6AK95tyiCoFMI8Swha8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bigquery-service@tidy-etching-447916-t0.iam.gserviceaccount.com",
+  "client_id": "110792072012476435140",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigquery-service%40tidy-etching-447916-t0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

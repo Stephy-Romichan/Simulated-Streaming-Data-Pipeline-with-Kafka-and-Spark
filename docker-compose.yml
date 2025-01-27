@@ -1,0 +1,72 @@
+version: '3'
+services:
+  kafka:
+    image: bitnami/kafka:latest
+    container_name: kafka-container
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    depends_on:
+      - zookeeper
+    networks:
+      - spark-network
+    restart: always
+    command: /opt/bitnami/scripts/kafka/entrypoint.sh /run.sh
+
+
+  zookeeper:
+    image: bitnami/zookeeper:latest
+    container_name: zookeeper-container
+    environment:
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ALLOW_ANONYMOUS_LOGIN: "yes"
+    networks:
+      - spark-network
+    restart: always
+
+  spark:
+    image: bitnami/spark:latest
+    container_name: spark-container
+    volumes:
+      - ./bigquery-service.json:/app/bigquery-service.json
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: "/app/bigquery-service.json"
+    depends_on:
+      - kafka  # Spark depends on Kafka
+    networks:
+      - spark-network
+    command: ["/bin/bash", "-c", "tail -f /dev/null"]
+
+  producer:
+    build: .
+    container_name: producer-container
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: "/app/bigquery-service.json"
+    volumes:
+      - ./bigquery-service.json:/app/bigquery-service.json
+    command: ["python", "/app/bigquery_to_kafka_producer.py"]
+    depends_on:
+      - kafka  # Producer starts after Kafka
+    networks:
+      - spark-network
+
+  consumer:
+    build: .
+    container_name: consumer-container
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: "/app/bigquery-service.json"
+    volumes:
+      - ./bigquery-service.json:/app/bigquery-service.json
+    command: >
+      bash -c "
+        python /app/wait_for_kafka.py &&  # First run the waiting script
+        python /app/bigquery_kafka_consumer.py  # Then run the Kafka consumer script
+      "
+    depends_on:
+      - kafka  # Consumer starts after Kafka
+    networks:
+      - spark-network
+
+networks:
+  spark-network:
+    driver: bridge
